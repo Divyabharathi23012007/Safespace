@@ -186,6 +186,7 @@ function openAdminDashboard(){
   document.getElementById("adminDashboard").style.display = "flex";
   switchAdminTab("overview");
   loadAdminData();
+  startQuoteRotation();
   if(!adminDashPollInterval) adminDashPollInterval = setInterval(loadAdminData, 8000);
 }
 
@@ -202,7 +203,7 @@ function adminLogout(){
 
 function switchAdminTab(tab){
   document.querySelectorAll(".adm-tab").forEach(el => el.classList.add("hidden"));
-  document.querySelectorAll(".adm-nav-item").forEach(el => el.classList.remove("active"));
+  document.querySelectorAll(".adm-menu-item").forEach(el => el.classList.remove("active"));
   document.getElementById("tab-"+tab).classList.remove("hidden");
   document.getElementById("nav-"+tab).classList.add("active");
   if(tab === "messages"){
@@ -223,6 +224,20 @@ async function loadAdminData(){
   document.getElementById("stat-suspicious").innerText= s.suspicious;
   document.getElementById("pendingBadge").innerText   = s.pending;
   document.getElementById("pendingBadge").style.display = s.pending > 0 ? "flex" : "none";
+
+  // Progress bars
+  const total = s.total || 1;
+  const setProgress = (id, val) => {
+    const pct = Math.round((val/total)*100);
+    const el = document.getElementById("prog-"+id);
+    const pe = document.getElementById("pct-"+id);
+    if(el) el.style.width = pct + "%";
+    if(pe) pe.innerText = pct + "%";
+  };
+  setProgress("resolved", s.resolved);
+  setProgress("inreview", s.inReview);
+  setProgress("pending",  s.pending);
+  setProgress("rejected", s.rejected);
   renderRecentComplaints();
   renderComplaintsTable(allComplaints);
 
@@ -520,4 +535,35 @@ function formatSidebarTime(ts){
 function escapeHtml(str){
   if(!str) return "";
   return str.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+
+/* ════════════════════════════════════════
+   QUOTES ROTATOR
+════════════════════════════════════════ */
+let currentQuote = 0;
+const totalQuotes = 6;
+
+function initQuoteDots(){
+  const dots = document.getElementById("quoteDots");
+  if(!dots) return;
+  dots.innerHTML = "";
+  for(let i=0;i<totalQuotes;i++){
+    const d = document.createElement("div");
+    d.className = "adm-quote-dot" + (i===0?" active":"");
+    d.onclick = () => goToQuote(i);
+    dots.appendChild(d);
+  }
+}
+
+function goToQuote(n){
+  document.getElementById("quote-"+currentQuote)?.classList.remove("active");
+  document.querySelectorAll(".adm-quote-dot")[currentQuote]?.classList.remove("active");
+  currentQuote = n;
+  document.getElementById("quote-"+currentQuote)?.classList.add("active");
+  document.querySelectorAll(".adm-quote-dot")[currentQuote]?.classList.add("active");
+}
+
+function startQuoteRotation(){
+  initQuoteDots();
+  setInterval(()=> goToQuote((currentQuote+1) % totalQuotes), 4000);
 }

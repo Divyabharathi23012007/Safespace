@@ -4,7 +4,7 @@
 <title id="pageTitle">SafeSpace Portal</title>
 <link rel="stylesheet" href="style.css">
 <link id="pageFavicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body id="bodyRoot">
 
@@ -111,7 +111,7 @@
 <!-- MAIN WEBSITE -->
 <div id="mainContent">
   <h1 class="title">🌸 SafeSpace</h1>
-  <p class="description">A safe platform where women can report harassment, bullying or misconduct confidentially.</p>
+  
 
   <div id="homePage" class="options">
     <div class="option-card" onclick="openRegister()"><h2>📝 Register Complaint</h2><p>Submit your complaint with proof securely.</p></div>
@@ -188,31 +188,69 @@
 <!-- ═══ ADMIN DASHBOARD ═══ -->
 <div id="adminDashboard" style="display:none;">
 
-  <!-- Sidebar -->
-  <div class="adm-sidebar">
-    <div class="adm-logo">
-      <div class="adm-logo-icon">🛡️</div>
+  <!-- ═══ TOP MENU BAR ═══ -->
+  <div class="adm-topnav">
+    <div class="adm-topnav-brand">
+      <span class="adm-topnav-icon">🛡️</span>
       <div>
-        <div class="adm-logo-title">SafeSpace</div>
-        <div class="adm-logo-sub">Admin Panel</div>
+        <div class="adm-topnav-title">SafeSpace</div>
+        <div class="adm-topnav-sub">Admin Panel</div>
       </div>
     </div>
-    <nav class="adm-nav">
-      <div class="adm-nav-item active" onclick="switchAdminTab('overview')" id="nav-overview">
-        <span class="adm-nav-icon">📊</span> Overview
+    <nav class="adm-topnav-menu">
+      <div class="adm-menu-item active" onclick="switchAdminTab('overview')" id="nav-overview">
+        <span>📊</span> Overview
       </div>
-      <div class="adm-nav-item" onclick="switchAdminTab('complaints')" id="nav-complaints">
-        <span class="adm-nav-icon">📋</span> Complaints
-        <span class="adm-nav-badge" id="pendingBadge">0</span>
+      <div class="adm-menu-item" onclick="switchAdminTab('complaints')" id="nav-complaints">
+        <span>📋</span> Complaints
+        <span class="adm-menu-badge" id="pendingBadge">0</span>
       </div>
-      <div class="adm-nav-item" onclick="switchAdminTab('messages')" id="nav-messages">
-        <span class="adm-nav-icon">💬</span> Messages
-        <span class="adm-nav-badge" id="msgBadge" style="display:none;">0</span>
+      <div class="adm-menu-item" onclick="switchAdminTab('messages')" id="nav-messages">
+        <span>💬</span> Messages
+        <span class="adm-menu-badge" id="msgBadge" style="display:none;">0</span>
       </div>
     </nav>
-    <div class="adm-sidebar-footer">
-      <button class="adm-logout" onclick="adminLogout()">🚪 Logout</button>
+    <div class="adm-topnav-right">
+      <span id="adminDateTime" class="adm-datetime"></span>
+      <button class="adm-logout-top" onclick="adminLogout()">🚪 Logout</button>
     </div>
+  </div>
+
+  <!-- ═══ QUOTES BANNER ═══ -->
+  <div class="adm-quotes-banner">
+    <div class="adm-quotes-inner">
+      <div class="adm-quote-slide active" id="quote-0">
+        <span class="adm-quote-mark">"</span>
+        <span class="adm-quote-text">A woman with a voice is, by definition, a strong woman.</span>
+        <span class="adm-quote-author">— Melinda Gates</span>
+      </div>
+      <div class="adm-quote-slide" id="quote-1">
+        <span class="adm-quote-mark">"</span>
+        <span class="adm-quote-text">I am no bird; and no net ensnares me. I am a free human being with an independent will.</span>
+        <span class="adm-quote-author">— Charlotte Brontë</span>
+      </div>
+      <div class="adm-quote-slide" id="quote-2">
+        <span class="adm-quote-mark">"</span>
+        <span class="adm-quote-text">Women are the largest untapped reservoir of talent in the world.</span>
+        <span class="adm-quote-author">— Hillary Clinton</span>
+      </div>
+      <div class="adm-quote-slide" id="quote-3">
+        <span class="adm-quote-mark">"</span>
+        <span class="adm-quote-text">The most courageous act is still to think for yourself. Aloud.</span>
+        <span class="adm-quote-author">— Coco Chanel</span>
+      </div>
+      <div class="adm-quote-slide" id="quote-4">
+        <span class="adm-quote-mark">"</span>
+        <span class="adm-quote-text">No country can ever truly flourish if it stifles the potential of its women.</span>
+        <span class="adm-quote-author">— Michelle Obama</span>
+      </div>
+      <div class="adm-quote-slide" id="quote-5">
+        <span class="adm-quote-mark">"</span>
+        <span class="adm-quote-text">I raise up my voice — not so I can shout, but so that those without a voice can be heard.</span>
+        <span class="adm-quote-author">— Malala Yousafzai</span>
+      </div>
+    </div>
+    <div class="adm-quote-dots" id="quoteDots"></div>
   </div>
 
   <!-- Main area -->
@@ -227,13 +265,51 @@
         </div>
       </div>
       <div class="adm-stat-grid">
-        <div class="adm-stat blue"><div class="adm-stat-num" id="stat-total">0</div><div class="adm-stat-label">Total Complaints</div><div class="adm-stat-icon">📋</div></div>
-        <div class="adm-stat orange"><div class="adm-stat-num" id="stat-pending">0</div><div class="adm-stat-label">Pending</div><div class="adm-stat-icon">⏳</div></div>
-        <div class="adm-stat yellow"><div class="adm-stat-num" id="stat-inreview">0</div><div class="adm-stat-label">In Review</div><div class="adm-stat-icon">🔍</div></div>
-        <div class="adm-stat green"><div class="adm-stat-num" id="stat-resolved">0</div><div class="adm-stat-label">Resolved</div><div class="adm-stat-icon">✅</div></div>
-        <div class="adm-stat red"><div class="adm-stat-num" id="stat-rejected">0</div><div class="adm-stat-label">Rejected</div><div class="adm-stat-icon">❌</div></div>
-        <div class="adm-stat purple"><div class="adm-stat-num" id="stat-suspicious">0</div><div class="adm-stat-label">Suspicious</div><div class="adm-stat-icon">⚠️</div></div>
+        <div class="adm-stat blue"><div class="adm-stat-left"><div class="adm-stat-num" id="stat-total">0</div><div class="adm-stat-label">Total Complaints</div></div><div class="adm-stat-icon">📋</div></div>
+        <div class="adm-stat orange"><div class="adm-stat-left"><div class="adm-stat-num" id="stat-pending">0</div><div class="adm-stat-label">Pending</div></div><div class="adm-stat-icon">⏳</div></div>
+        <div class="adm-stat yellow"><div class="adm-stat-left"><div class="adm-stat-num" id="stat-inreview">0</div><div class="adm-stat-label">In Review</div></div><div class="adm-stat-icon">🔍</div></div>
+        <div class="adm-stat green"><div class="adm-stat-left"><div class="adm-stat-num" id="stat-resolved">0</div><div class="adm-stat-label">Resolved</div></div><div class="adm-stat-icon">✅</div></div>
+        <div class="adm-stat red"><div class="adm-stat-left"><div class="adm-stat-num" id="stat-rejected">0</div><div class="adm-stat-label">Rejected</div></div><div class="adm-stat-icon">❌</div></div>
+        <div class="adm-stat purple"><div class="adm-stat-left"><div class="adm-stat-num" id="stat-suspicious">0</div><div class="adm-stat-label">Suspicious</div></div><div class="adm-stat-icon">⚠️</div></div>
       </div>
+      <!-- Quick Actions -->
+      <div class="adm-recent-wrap" style="padding-bottom:0;">
+        <div class="adm-section-title">Quick Actions</div>
+        <div class="adm-quick-actions">
+          <button class="adm-quick-btn" onclick="switchAdminTab('complaints')">📋 View All Complaints</button>
+          <button class="adm-quick-btn" onclick="switchAdminTab('messages')">💬 Open Messages</button>
+          <button class="adm-quick-btn adm-quick-btn-outline" onclick="switchAdminTab('complaints');document.getElementById('statusFilter').value='Pending';filterComplaints()">⏳ Show Pending Only</button>
+          <button class="adm-quick-btn adm-quick-btn-outline" onclick="switchAdminTab('complaints');document.getElementById('aiFilter').value='Suspicious';filterComplaints()">⚠️ Show Suspicious</button>
+        </div>
+      </div>
+
+      <!-- Resolution Progress -->
+      <div class="adm-recent-wrap" style="padding-bottom:0;">
+        <div class="adm-section-title">Resolution Progress</div>
+        <div class="adm-progress-card">
+          <div class="adm-progress-row">
+            <span class="adm-progress-label">Resolved</span>
+            <div class="adm-progress-bar"><div class="adm-progress-fill green" id="prog-resolved" style="width:0%"></div></div>
+            <span class="adm-progress-pct" id="pct-resolved">0%</span>
+          </div>
+          <div class="adm-progress-row">
+            <span class="adm-progress-label">In Review</span>
+            <div class="adm-progress-bar"><div class="adm-progress-fill blue" id="prog-inreview" style="width:0%"></div></div>
+            <span class="adm-progress-pct" id="pct-inreview">0%</span>
+          </div>
+          <div class="adm-progress-row">
+            <span class="adm-progress-label">Pending</span>
+            <div class="adm-progress-bar"><div class="adm-progress-fill orange" id="prog-pending" style="width:0%"></div></div>
+            <span class="adm-progress-pct" id="pct-pending">0%</span>
+          </div>
+          <div class="adm-progress-row">
+            <span class="adm-progress-label">Rejected</span>
+            <div class="adm-progress-bar"><div class="adm-progress-fill red" id="prog-rejected" style="width:0%"></div></div>
+            <span class="adm-progress-pct" id="pct-rejected">0%</span>
+          </div>
+        </div>
+      </div>
+
       <div class="adm-recent-wrap">
         <div class="adm-section-title">Recent Complaints</div>
         <div id="recentComplaints" class="adm-recent-list"></div>
