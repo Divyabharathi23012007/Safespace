@@ -1,0 +1,198 @@
+{
+  "3c269b8b-4cb3-4db5-9bdf-01d86bfaa2f8": [
+    {
+      "id": "d477ce59-b13b-4de1-b4f4-c5511ec128d7",
+      "sender": "user",
+      "senderLabel": "john",
+      "text": "Hello admin",
+      "timestamp": "2026-03-05T23:06:48.434Z",
+      "read": true
+    },
+    {
+      "id": "236999c8-b351-4903-963b-202d1155adda",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "Thank you for reaching out to the support team.",
+      "timestamp": "2026-03-05T23:09:35.445Z",
+      "read": true
+    },
+    {
+      "id": "9bcb1d14-4178-4717-ad88-7e809396d139",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "Are you safe right now?",
+      "timestamp": "2026-03-05T23:09:42.983Z",
+      "read": true
+    },
+    {
+      "id": "090509e0-217a-4b8e-9349-b83e2a805e87",
+      "sender": "user",
+      "senderLabel": "john",
+      "text": "Yes, I am safe right now.",
+      "timestamp": "2026-03-05T23:10:02.210Z",
+      "read": true
+    },
+    {
+      "id": "556411cf-2445-47f2-87e6-f10201ae58d4",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "Please feel free to explain what happened.",
+      "timestamp": "2026-03-05T23:10:47.378Z",
+      "read": true
+    },
+    {
+      "id": "d62730c3-ca73-4e33-a1ee-15b0653d5679",
+      "sender": "user",
+      "senderLabel": "john",
+      "text": "Yesterday evening around 7 PM, while I was returning home from work, a man on a bike kept following me for several streets. He was making inappropriate comments and trying to get my attention.",
+      "timestamp": "2026-03-05T23:11:29.214Z",
+      "read": true
+    },
+    {
+      "id": "7e76cfb1-eaaf-43a9-ba99-75e1088acf8e",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "Do you remember any details about the person or the bike, such as clothing, appearance, or the vehicle number?",
+      "timestamp": "2026-03-05T23:11:55.911Z",
+      "read": true
+    },
+    {
+      "id": "ffa61719-143c-4846-abe8-ddf1dee21bfa",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "tell me the location",
+      "timestamp": "2026-03-05T23:12:03.497Z",
+      "read": true
+    },
+    {
+      "id": "747f5142-6de1-4a77-a847-44503f529dc4",
+      "sender": "user",
+      "senderLabel": "john",
+      "text": "near the clg bus stop",
+      "timestamp": "2026-03-05T23:12:40.947Z",
+      "read": true
+    },
+    {
+      "id": "b6be84c7-ce27-438e-aa1f-81a0ea03be0b",
+      "sender": "user",
+      "senderLabel": "john",
+      "text": "He was wearing a black jacket and a red helmet.",
+      "timestamp": "2026-03-05T23:13:16.833Z",
+      "read": true
+    },
+    {
+      "id": "5b0cfdb2-23ba-461d-960a-1994ed0f98bb",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "Our investigation team will analyze",
+      "timestamp": "2026-03-05T23:13:53.961Z",
+      "read": true
+    }
+  ],
+  "834eae29-c260-490d-865b-0578d390a2f0": [
+    {
+      "id": "a5399e84-0c61-447f-a9b0-339ea73e61ed",
+      "sender": "user",
+      "senderLabel": "User",
+      "text": "Hello team",
+      "timestamp": "2026-03-05T23:50:13.964Z",
+      "read": true
+    },
+    {
+      "id": "b5432817-5884-4662-91d5-bdde147c9790",
+      "sender": "user",
+      "senderLabel": "User",
+      "text": "Thank you for reaching out to the support team.",
+      "timestamp": "2026-03-05T23:52:23.469Z",
+      "read": true
+    },
+    {
+      "id": "f9e14479-3fdc-4b9a-9adc-4c9fa15b4fa0",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "Are u safe now",
+      "timestamp": "2026-03-05T23:52:52.288Z",
+      "read": true
+    },
+    {
+      "id": "d4d99086-6347-4b82-8da4-61a77c894d9f",
+      "sender": "user",
+      "senderLabel": "User",
+      "text": "Yes i am safe now",
+      "timestamp": "2026-03-05T23:53:25.551Z",
+      "read": true
+    },
+    {
+      "id": "dbfb8452-63e9-4b2b-bba2-268d15f68752",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "Please feel free to explain what happened.",
+      "timestamp": "2026-03-05T23:53:50.929Z",
+      "read": true
+    },
+    {
+      "id": "9c21725b-c66b-4557-bd02-9a1a19642bbc",
+      "sender": "user",
+      "senderLabel": "User",
+      "text": "Yesterday evening around 7 PM, while I was returning home from work, a man on a bike kept following me for several streets. He was making inappropriate comments and trying to get my attention.",
+      "timestamp": "2026-03-05T23:54:05.019Z",
+      "read": true
+    },
+    {
+      "id": "07d2e3f5-5c7e-44ee-8dfe-1664b0a1a279",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "please tell me the location",
+      "timestamp": "2026-03-05T23:54:20.229Z",
+      "read": true
+    },
+    {
+      "id": "b6e2c34a-b3e6-4d3b-b9ba-92bdc7316df3",
+      "sender": "user",
+      "senderLabel": "User",
+      "text": "It happened near the bus stop on MG Road.",
+      "timestamp": "2026-03-05T23:54:30.952Z",
+      "read": true
+    },
+    {
+      "id": "7090b3aa-e754-4b0b-bf5c-e86fd9ae8f83",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "Do you remember any details about the person or the bike, such as clothing, appearance, or the vehicle number?",
+      "timestamp": "2026-03-05T23:54:40.474Z",
+      "read": true
+    },
+    {
+      "id": "d708ff0d-1beb-457b-9885-5d072527be0a",
+      "sender": "user",
+      "senderLabel": "User",
+      "text": "He was wearing a black jacket and a red helmet. I couldn't see his face clearly",
+      "timestamp": "2026-03-05T23:54:58.516Z",
+      "read": true
+    },
+    {
+      "id": "e135a01a-5c69-4165-bdd7-6ea7d6da34c1",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "Ok",
+      "timestamp": "2026-03-05T23:55:11.516Z",
+      "read": true
+    },
+    {
+      "id": "d4147665-2e4e-4189-bab5-dd7aa06b5e58",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "Dont worry",
+      "timestamp": "2026-03-05T23:55:17.865Z",
+      "read": true
+    },
+    {
+      "id": "e3d527d5-9198-48e4-be11-9cc819618b1a",
+      "sender": "admin",
+      "senderLabel": "SafeSpace Admin",
+      "text": "Our team will analyze this",
+      "timestamp": "2026-03-05T23:55:26.021Z",
+      "read": true
+    }
+  ]
+}

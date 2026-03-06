@@ -1,0 +1,11 @@
+# Secret credentials — NEVER upload this to GitHub
+.env
+
+# Data files with complaint info
+data/
+
+# Uploaded proof files
+uploads/
+
+# Node modules
+node_modules/

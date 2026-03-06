@@ -1,0 +1,158 @@
+[
+  {
+    "id": "2749e876-1633-4f55-9d94-89d6ef0db457",
+    "complaint": "manager using abusive words",
+    "person": "john",
+    "proof": "in company",
+    "status": "Resolved",
+    "date": "2026-03-05T07:11:03.223Z",
+    "statusUpdatedAt": "2026-03-05T23:57:29.075Z"
+  },
+  {
+    "id": "0c06831b-7b24-4adb-a832-c4decb91d613",
+    "complaint": "He is using abusive words on me",
+    "person": "john",
+    "proof": "1772695120665-Screenshot 2025-05-04 190507.png",
+    "status": "Pending",
+    "date": "2026-03-05T07:18:40.690Z"
+  },
+  {
+    "id": "a9caa791-c6d8-4f55-856d-3d5693881982",
+    "complaint": "Use of abusive words on me",
+    "person": "john",
+    "proof": "1772695997524-Screenshot 2025-05-04 190033.png",
+    "status": "In Review",
+    "date": "2026-03-05T07:33:17.548Z",
+    "statusUpdatedAt": "2026-03-05T23:57:22.743Z"
+  },
+  {
+    "id": "86f1a2f6-bfaa-4de3-bcb5-6b37203e64eb",
+    "complaint": "abusive words on me",
+    "person": "john",
+    "proof": "1772696792312-Screenshot 2025-07-03 142754.png",
+    "status": "Pending",
+    "ai_verification": "Valid",
+    "date": "2026-03-05T07:46:32.324Z"
+  },
+  {
+    "id": "3d588782-f359-411b-800e-a256341cb622",
+    "complaint": "abusive words on me",
+    "person": "john",
+    "proof": "1772696908948-Screenshot 2025-05-04 190033.png",
+    "status": "Pending",
+    "ai_verification": "Valid",
+    "date": "2026-03-05T07:48:28.959Z"
+  },
+  {
+    "id": "69bfe6f0-5f80-4b13-9855-4bedb00a27db",
+    "complaint": "Abusive, Manipulative",
+    "person": "Ronald",
+    "proof": "1772697399815-Screenshot 2025-05-04 184512.png",
+    "status": "Resolved",
+    "ai_verification": "Valid",
+    "date": "2026-03-05T07:56:39.827Z",
+    "statusUpdatedAt": "2026-03-05T23:57:33.539Z"
+  },
+  {
+    "id": "9314c71f-a320-43ad-95e9-599122e51b99",
+    "complaint": "sexual harrassmenr",
+    "person": "Ronald",
+    "proof": "1772697496981-Screenshot 2025-05-04 190033.png",
+    "status": "Pending",
+    "ai_verification": "Valid",
+    "date": "2026-03-05T07:58:16.997Z"
+  },
+  {
+    "id": "0f471a73-c882-4a2c-bc25-8b339d03fd24",
+    "complaint": "sexual harrassment",
+    "person": "Ronald",
+    "proof": "1772697518031-Screenshot 2025-05-04 190033.png",
+    "status": "Pending",
+    "ai_verification": "Valid",
+    "date": "2026-03-05T07:58:38.039Z"
+  },
+  {
+    "id": "3c269b8b-4cb3-4db5-9bdf-01d86bfaa2f8",
+    "complaint": "lie",
+    "person": "john",
+    "proof": "1772699351569-WhatsApp Image 2026-03-05 at 1.48.56 PM.jpeg",
+    "status": "Rejected",
+    "ai_verification": "Suspicious",
+    "date": "2026-03-05T08:29:11.574Z",
+    "statusUpdatedAt": "2026-03-05T23:57:10.735Z"
+  },
+  {
+    "id": "23a50405-18d4-4008-a6e8-d9c62f77838a",
+    "complaint": "lie",
+    "person": "Ronald",
+    "proof": "1772702597050-WhatsApp Image 2026-03-05 at 1.48.56 PM.jpeg",
+    "status": "Rejected",
+    "ai_verification": "Suspicious",
+    "date": "2026-03-05T09:23:17.063Z",
+    "statusUpdatedAt": "2026-03-05T23:57:14.682Z"
+  },
+  {
+    "id": "2008f759-0531-4811-a728-1bb3fb6c29f5",
+    "complaint": "i am working a office.  there i have some harassement.",
+    "person": "manager name john",
+    "proof": "1772712310558-2025-07-11 20-16-16.mkv",
+    "status": "Pending",
+    "ai_verification": "Valid",
+    "date": "2026-03-05T12:05:13.769Z"
+  },
+  {
+    "id": "ad614bd7-ebbc-4d7f-94aa-1984ff528252",
+    "complaint": "abusive words using in the office",
+    "person": "Ronald",
+    "proof": null,
+    "status": "Pending",
+    "ai_verification": "Valid",
+    "date": "2026-03-05T12:28:41.228Z"
+  },
+  {
+    "id": "7d7b50d5-86f8-4cb0-82b3-b8e61c758128",
+    "complaint": "abusive words",
+    "person": "john",
+    "proof": null,
+    "status": "Pending",
+    "ai_verification": "Valid",
+    "date": "2026-03-05T12:35:57.355Z"
+  },
+  {
+    "id": "3d87de01-9970-427e-9c8e-c2d4337a17f6",
+    "complaint": "a stranger is teasing me daily ",
+    "person": "john",
+    "proof": "1772753321942-Screenshot 2025-07-14 185531.png",
+    "status": "Pending",
+    "ai_verification": "Valid",
+    "date": "2026-03-05T23:28:41.950Z"
+  },
+  {
+    "id": "834eae29-c260-490d-865b-0578d390a2f0",
+    "complaint": "A man is making inappropriate comments about me",
+    "person": "",
+    "proof": "1772754547509-Screenshot 2026-03-06 051711.png",
+    "status": "In Review",
+    "ai_verification": "Valid",
+    "date": "2026-03-05T23:49:07.514Z",
+    "statusUpdatedAt": "2026-03-05T23:56:58.183Z"
+  },
+  {
+    "id": "5d9a09b2-8ce4-4fee-9844-419dff4214c7",
+    "complaint": "my friend is teasing me",
+    "person": "Bob",
+    "proof": null,
+    "status": "Pending",
+    "ai_verification": "Valid",
+    "date": "2026-03-06T00:05:54.505Z"
+  },
+  {
+    "id": "b2e80163-1557-4d9e-ab54-caec07d965ac",
+    "complaint": "My friend is teasing me daily. I fell ashamed on his teasing",
+    "person": "",
+    "proof": null,
+    "status": "Pending",
+    "ai_verification": "Valid",
+    "date": "2026-03-06T00:13:00.300Z"
+  }
+]
